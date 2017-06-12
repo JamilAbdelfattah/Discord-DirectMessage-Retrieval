@@ -1,0 +1,23 @@
+﻿<Window x:Class="GhettoDiscordWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GhettoDiscordWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="568.549" Width="1077.529">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="777*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="AuthBox" HorizontalAlignment="Left" Height="21" Margin="10,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="278" TextChanged="AuthBox_TextChanged"/>
+        <Button x:Name="PopulateCombo" Content="Populate Combo" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="278" Click="PopulateCombo_Click" Height="20"/>
+        <ListBox x:Name="MessageContainer" Margin="3,10,10,10" RenderTransformOrigin="0.195,0.512" Grid.Column="1"/>
+        <Label x:Name="AuthLabel" Content="Authentication:" HorizontalAlignment="Left" Height="27" Margin="5,12,0,0" VerticalAlignment="Top" Width="283" Grid.IsSharedSizeScope="True" FontSize="11" Background="{x:Null}" Foreground="#FF0017FF"/>
+        <Button x:Name="MessagesButton" Content="Get Messages" Margin="0,484,10,10" Click="MessagesButton_Click" HorizontalAlignment="Right" Width="273"/>
+        <ComboBox x:Name="ListOfDM" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="278" Height="22"/>
+        <Button x:Name="SaveToFileButton" Content="Save" HorizontalAlignment="Left" Margin="10,459,0,0" VerticalAlignment="Top" Width="36" Click="SaveToFileButton_Click" Height="20"/>
+
+    </Grid>
+</Window>
